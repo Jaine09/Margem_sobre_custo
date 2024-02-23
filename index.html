@@ -14,17 +14,55 @@
         <form class="dados">
             <div>
             <label>Custo do Produto</label>
-            <input type="text" name="custo">
+            <input type="number"id="custo">
             </div>
             <div class="mark">
             <label>Mark-up (porcentagem)</label>
-            <input type="text" name="mark-up">
+            <input type="number" id="mark-up">
             </div>
-            <button onclick="calcular">Calcular</button>
+            <button type="submit" onclick="calcular(event),custocommark(), venda(), icms(), piscof(), ipi(), lucro(), margemlucro()">Calcular</button>
         </form>
     </div>
     <div class="simulacao">
         <h1>Retorno da simulação de Margem de Custo</h1>
+    
+        <div class="dados-simulacao">
+            <h3>Valor do custo do produto</h3>
+            <span id="valor"></span>
+        </div>
+        <div class="dados-simulacao">
+            <h3>Mark-Up</h3>
+            <span id="mark"></span>
+        </div>
+        <div class="dados-simulacao">
+            <h3>Custo com Mark-Up</h3>
+            <span id="custo-mark"></span>
+        </div>
+        <div class="dados-simulacao">
+            <h3>Preço de venda</h3>
+            <span id="preco"></span>
+        </div>
+        <div class="dados-simulacao">
+            <h3>ICMS</h3>
+            <span id="icms"></span>
+        </div>
+        <div class="dados-simulacao">
+            <h3>PIS/COF</h3>
+            <span id="pis"></span>
+        </div>
+        <div class="dados-simulacao">
+            <h3>Custo com IPI</h3>
+            <span id="ipi"></span>
+        </div>
+        <div class="dados-simulacao">
+            <h3>Margem de lucro</h3>
+            <span id="margem"></span>
+        </div>
+        <div class="dados-simulacao">
+            <h3>Margem de lucro com porcentagem</h3>
+            <span id="margem-porcentagem"></span>
+        </div>
+    </div>
     </div>
     </main>
 </body>

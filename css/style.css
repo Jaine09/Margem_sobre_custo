@@ -1,23 +1,31 @@
 body{
     color: white;
-    background-color:gray;
+    background: linear-gradient(120deg, black,rgb(3, 3, 38), rgb(36, 39, 106));
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
+    color:burlywood;
 }
 
 .container{
-    height: 90vh;
+    height: 160vh;
     display: flex;
     align-items:center;
     justify-content: center;
     flex-direction: column;
 }
 
-.geral, .dados{
+.geral, .dados, .simulacao{
     display: flex;
     align-items:center;
     justify-content: center;
     flex-direction: column;
+}
+
+.geral{
+    border:5px solid white;
+    padding: 0 10px 20px 10px;
+    
+
 }
 
 .dados input, button {
@@ -29,4 +37,17 @@ body{
     margin-right: 35px;
 }
 
+.dados-simulacao{
+    display: flex;
+    
+}
+
+span{
+    border: 2px solid white;
+    width: 100px;
+    height: 30px;
+    margin: 16px 10px ;
+    box-shadow: inset 0 0 5px;
+    /* background-color: black; */
+}
 
