@@ -33,6 +33,14 @@ body{
     margin-top: 30px;
 }
 
+button{
+    color: burlywood;
+    border: 2px solid black;
+    background: linear-gradient(120deg, black,rgb(3, 3, 38), rgb(36, 39, 106));
+    height: 40px;
+    width: 80px;
+}
+
 .mark{
     margin-right: 35px;
 }
