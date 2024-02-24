@@ -8,7 +8,7 @@ function calcular(event){
     var markUp = document.querySelector("#mark-up").value;
     var porcentagem = markUp/100 
 
-    document.querySelector("#mark").textContent = porcentagem.toFixed(2) + '%';
+    document.querySelector("#mark").textContent = (porcentagem*100).toFixed(2) + '%';
 
 }
 
@@ -52,4 +52,4 @@ function lucro(){
 function margemlucro(){
     var lucro = document.querySelector("#margem").textContent/document.querySelector("#preco").textContent
 
-    document.querySelector("#margem-porcentagem").textContent = lucro.toFixed(2) + '%'}
+    document.querySelector("#margem-porcentagem").textContent = (lucro*100).toFixed(2) + '%'}
