@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-    height: 160vh;
+    height: 120vh;
     display: flex;
     align-items:center;
     justify-content: center;
